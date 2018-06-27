@@ -25,8 +25,8 @@ public class PessoaDAO<TIPO> extends DAOGenerico<Pessoa> implements Serializable
     }
 
     @Override
-    public Pessoa getObjectById(Object id) throws Exception {
-        Pessoa obj = em.find(Pessoa.class, id);
+    public Pessoa getObjectById(Object codigo) throws Exception {
+        Pessoa obj = em.find(Pessoa.class, codigo);
         /**
          * Alinha obj.getAutorizações
          */

@@ -10,14 +10,13 @@
     <h:body>
         <b:container style="color: forestgreen">
             <h:form id="formMenu">
-                <b:navBar brand="LOCAÇÃO DE FILMES">
+                <b:navBar brand="Locação de Filmes">
                     <b:navbarLinks>
                         <b:navLink value="Inicio" outcome="inicio" style="color: darkcyan"/>
-                       
-
+                        <b:dropMenu value="Modulos"> 
+                            <b:navCommandLink value="Pessoas" ajax="false"
+                                              action="#{controlePessoa.listar()}"/>                           
                         </b:dropMenu>
-                        
-
                     </b:navbarLinks>
                 </b:navBar>
             </h:form>

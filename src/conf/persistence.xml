@@ -2,17 +2,17 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="LOCARFILMES-WEBPU" transaction-type="JTA">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <jta-data-source>jdbc</jta-data-source>
-     <class>br.edu.ifsul.modelo.Autorizacao</class>
-    <class>br.edu.ifsul.modelo.Filme</class>
-    <class>br.edu.ifsul.modelo.Locacao</class>
-    <class>br.edu.ifsul.modelo.Pessoa</class>
+    <jta-data-source>jdbc/LOCACAOFILMES</jta-data-source>
+      <class>br.edu.ifsul.modelo.Autorizacao</class>
+      <class>br.edu.ifsul.modelo.Filme</class>
+      <class>br.edu.ifsul.modelo.Locacao</class>
+      <class>br.edu.ifsul.modelo.Pessoa</class>
     <properties>
-        <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/LOCACAOFILMES"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="armagedom"/>
+      <property name="javax.persistence.jdbc.password" value="postgres"/>
       <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
       <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
       <property name="hibernate.connection.autocommit" value="false"/>

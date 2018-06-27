@@ -6,9 +6,9 @@
         <property name="portNumber" value="5432"/>
         <property name="databaseName" value="LOCACAOFILMES"/>
         <property name="User" value="postgres"/>
-        <property name="Password" value="armagedom"/>
+        <property name="Password" value="postgres"/>
         <property name="URL" value="jdbc:postgresql://localhost:5432/LOCACAOFILMES"/>
         <property name="driverClass" value="org.postgresql.Driver"/>
     </jdbc-connection-pool>
-    <jdbc-resource enabled="true" jndi-name="java:app/jdbc" object-type="user" pool-name="post-gre-sql_LOCACAOFILMES_postgresPool"/>
+    <jdbc-resource enabled="true" jndi-name="jdbc/LOCACAOFILMES" object-type="user" pool-name="post-gre-sql_LOCACAOFILMES_postgresPool"/>
 </resources>
